@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,7 @@
         android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+
         android:layout_marginTop="67dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -21,8 +22,7 @@
         android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="1dp"
+
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView"
@@ -33,7 +33,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
+
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:text="Save"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonShow"
         app:layout_constraintStart_toStartOf="parent" />
@@ -59,3 +61,4 @@
         app:layout_constraintStart_toEndOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -13,39 +13,16 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
 
     lateinit var database : StudentDatabase
-    lateinit var viewModel: MainViewModel
+
+   // lateinit var binding: com.example.mydbproject.databinding.ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       /* var counter = 0
-        button.setOnClickListener {
-            counter++
-            textView.setText(""+ counter)
-        }*/
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        viewModel.startTimer()
-
-        viewModel.sec.observe(this, Observer {
-            textView.text = it.toString()
-        })
-
-        viewModel.countfinish.observe(this, Observer {
-            textView.text = it.toString()
-        })
-
-       /* textView.text = viewModel.numb.toString()
-
-        button.setOnClickListener {
-            viewModel.incNumber()
-            textView.text = viewModel.numb.toString()
-        }*/
 
 
 
-
-
-    /*    database = Room.databaseBuilder(this,StudentDatabase::class.java,
+        database = Room.databaseBuilder(this,StudentDatabase::class.java,
             "mystudendb").fallbackToDestructiveMigration().build()
         button.setOnClickListener {
             GlobalScope.launch {
@@ -64,6 +41,6 @@ class MainActivity : AppCompatActivity() {
                     Log.i("mytag",result)
                 }
             }
-        }*/
+        }
     }
 }
